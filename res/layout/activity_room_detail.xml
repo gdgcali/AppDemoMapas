@@ -1,0 +1,47 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomDetailActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/habit01" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/msg_rate"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_rate" />
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/toggle_recomendacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toogleClick"
+            android:textOff="@string/msg_no"
+            android:textOn="@string/msg_yes" />
+    </LinearLayout>
+
+</ScrollView>
